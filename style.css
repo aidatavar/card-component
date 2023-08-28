@@ -13,11 +13,12 @@
     --dark-blue: hsl(212, 21%, 14%);
     --grayish-blue: hsl(228, 12%, 48%);
     --White: hsl(0, 0%, 100%);
+    --text-fonts: 'Fraunces', serif;
+    --text-fonts-2: 'Montserrat', sans-serif;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    width: 100%;
+    width: 80%;
     height: 100vh;
     background-color: var(--Cream);
     display: flex;
@@ -34,6 +35,7 @@ p {
     height: 400px;
     position: relative;
     background-color: var(--White);
+    
 }
 
 img {
@@ -47,8 +49,61 @@ img {
     left: 100%;
     position: absolute;
     background-color: var(--White);
+    padding: 20px;
 }
 
+.card-title {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+    color: var(--grayish-blue);
+    font-family: var(--text-fonts-2);
+}
+
+.card-subtitle{
+    margin-bottom: 10px;
+    font-family: var(--text-fonts);
+    margin-bottom: 10px;
+    
+}
+
+.card-info{
+    color: var(--grayish-blue);
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-family: var(--text-fonts-2);
+}
+
+.price {
+    color: var(--Dark-cyan);
+    font-family: var(--text-fonts);
+}
+
+.price2{
+    color: var(--grayish-blue);
+    text-align: right;
+    margin-top: -30px;
+    font-size: small;
+    text-decoration: line-through;
+    padding-right: 25%;
+    font-family: var(--text-fonts-2);
+}
+
+button{
+    background-color: var(--Dark-cyan);
+    border-radius: 10px;
+    border: solid 10px var(--Dark-cyan);
+    min-height: 30px; 
+    min-width: 250px;
+    margin-top: 20px;
+    font-family: var(--text-fonts-2);
+}
+
+button a {
+    color: var(--White);
+    text-decoration: none;
+
+}
 /* .attribution { 
     font-size: 11px; 
     text-align: center;
